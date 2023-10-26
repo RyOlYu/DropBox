@@ -1,0 +1,40 @@
+
+.body {
+  background: #fff;
+}
+
+
+.flex-conteiner {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+.flex-conteiner__main-content {
+  display: flex;
+  justify-items: auto;
+  height: 100%;
+  
+}
+
+.flex-conteiner__header {
+  background: #f3a9a9;
+  height: 75px;
+}
+
+.flex-conteiner__main-content_nav-bar {
+  background: #73e079;
+  width: 250px;
+}
+
+.flex-conteiner__main-content_content {
+  background: #b9e74e;
+  width: calc(100% - 250px);
+}
+
+.flex-conteiner__footer{
+  background: #795ae6;
+  height: 100px;
+}
