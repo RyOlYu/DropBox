@@ -1,26 +1,16 @@
 const body = document.body;
-const bodyConteiner = document.createElement('div');
-bodyConteiner.classList.add('flex-conteiner');
 
-const mainHeader = document.createElement('header');
-mainHeader.classList.add('mainHeader');
-
-const navBarConteiner = document.createElement('aside');
-navBarConteiner.classList.add('navBarConteiner');
-
-const footerConteiner = document.createElement('footer');
-footerConteiner.classList.add('footerConteiner');
-
-const mainContentConteiner = document.createElement('div');
-mainContentConteiner.classList.add('mainContentConteiner');
-
-const mainConteiner = document.createElement('main');
-mainConteiner.classList.add('mainConteiner');
-
-body.appendChild(bodyConteiner);
-bodyConteiner.appendChild(mainHeader);
-bodyConteiner.appendChild(mainConteiner);
-bodyConteiner.appendChild(footerConteiner);
-mainConteiner.insertAdjacentElement('beforeend', navBarConteiner);
-mainConteiner.insertAdjacentElement('beforeend', mainContentConteiner);
-
+const ul = `
+  <ul class = 'container'>
+    <li class = 'item1'>1</li>
+    <li class = 'item2'>2</li>
+    <li class = 'item3'>3</li>
+    <li class = 'item4'>4</li>
+    <li class = 'item5'>5</li>
+    <li class = 'item6'>6</li>
+    <li class = 'item7'>7</li>
+    <li class = 'item8'>8</li>
+    <li class = 'item9'>9</li>
+  </ul>
+`
+body.innerHTML = ul;
